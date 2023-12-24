@@ -11,6 +11,8 @@ valid_password = "Password123"
 invalid_username = "Teacher"
 invalid_password = "Password111"
 driver = webdriver.Chrome()
+# driver = webdriver.Firefox()
+# driver = webdriver.Edge()
 driver.maximize_window()
 driver.implicitly_wait(10)
 
