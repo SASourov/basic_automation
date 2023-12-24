@@ -122,7 +122,7 @@ def navigate_menu():
         print("Test Failed. Your Expected Text is : ", expected_title)
         assert False
 
-    print("*************Menu Navigate  Test Done*************\n\n")
+    print("*************Menu Navigate  Test Done**************\n\n")
 
 
 invalid_login()
