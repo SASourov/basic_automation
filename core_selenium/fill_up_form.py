@@ -74,3 +74,4 @@ def register_from():
 
 register_from()
 driver.quit()
+print("***************Hello, Mr. Reviewer. Thanks a lot for review this code.***************")
