@@ -22,7 +22,8 @@ def drop_down():
 
 def take_screen_shot():
     driver.get(drop_down_url)
-    ss = driver.save_screenshot(r"D:\basic_automation\Screen_Shot\test" + str(random) + ".png") #file_path/file_name.file_extention
+    ss = driver.save_screenshot(
+        r"D:\basic_automation\Screen_Shot\test" + str(random) + ".png")  # file_path/file_name.file_extention
 
 
 def window_handle():
@@ -36,7 +37,7 @@ def window_handle():
 def upload_photo():
     driver.get("https://www.techlistic.com/p/selenium-practice-form.html")
     upload_image = driver.find_element(By.ID, "photo")
-    upload_image.send_keys(r"D:/File/pro_pic_demo.png") #file_path/file_name.file_extention
+    upload_image.send_keys(r"D:/File/pro_pic_demo.png")  # file_path/file_name.file_extention
     time.sleep(10)
 
 
