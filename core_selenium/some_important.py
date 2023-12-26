@@ -3,7 +3,6 @@ import random
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.select import Select
-import string
 
 random = random.randint(0, 999)
 driver = webdriver.Chrome()
@@ -22,8 +21,8 @@ def drop_down():
 
 def take_screen_shot():
     driver.get(drop_down_url)
-    ss = driver.save_screenshot(
-        r"D:\basic_automation\Screen_Shot\test" + str(random) + ".png")  # file_path/file_name.file_extention
+    driver.save_screenshot(
+        r"D:\basic_automation\Screen_Shot\test" + str(random) + ".png")  # file_path/file_name.file_extension
 
 
 def window_handle():
@@ -37,8 +36,9 @@ def window_handle():
 def upload_photo():
     driver.get("https://www.techlistic.com/p/selenium-practice-form.html")
     upload_image = driver.find_element(By.ID, "photo")
-    upload_image.send_keys(r"D:/File/pro_pic_demo.png")  # file_path/file_name.file_extention
-    time.sleep(10)
+
+    upload_image.send_keys(r"D:/File/pro_pic_demo.png")  # file_path/file_name.file_extension
+
 
 
 drop_down()
