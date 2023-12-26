@@ -36,8 +36,9 @@ def window_handle():
 def upload_photo():
     driver.get("https://www.techlistic.com/p/selenium-practice-form.html")
     upload_image = driver.find_element(By.ID, "photo")
+
     upload_image.send_keys(r"D:/File/pro_pic_demo.png")  # file_path/file_name.file_extension
-    time.sleep(10)
+
 
 
 drop_down()
