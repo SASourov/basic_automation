@@ -71,7 +71,9 @@ def register_from():
     click_submit_button = driver.find_element(By.ID, "submitbtn")
     click_submit_button.click()
 
+    time.sleep(10)
+
 
 register_from()
 driver.quit()
-print("Hello, Mr. Reviewer. Thanks a lot for review this code")
+print("***************Hello, Mr. Reviewer. Thanks a lot for review this code.***************")
