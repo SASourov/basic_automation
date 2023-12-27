@@ -59,12 +59,12 @@ class SubmitContact:
         self.submit = (By.CSS_SELECTOR, ".wpforms-submit")
 
     def set_first_name(self, f_name):
-        self.driver.find_element(*self.first_name).clear()
-        self.driver.find_element(*self.first_name).send_keys(f_name)
+        self.driver.find_element(self.first_name).clear()
+        self.driver.find_element(self.first_name).send_keys(f_name)
 
     def set_last_name(self, l_name):
-        self.driver.find_element(*self.last_name).clear()
-        self.driver.find_element(*self.last_name).send_keys(l_name)
+        self.driver.find_element(self.last_name).clear()
+        self.driver.find_element(self.last_name).send_keys(l_name)
 
     def set_email(self, email):
         self.driver.find_element(*self.email).clear()
