@@ -40,7 +40,6 @@ def upload_photo():
     upload_image.send_keys(r"D:/File/pro_pic_demo.png")  # file_path/file_name.file_extension
 
 
-
 drop_down()
 take_screen_shot()
 upload_photo()
