@@ -70,9 +70,9 @@ class SubmitContact:
         self.driver.find_element(*self.email).clear()
         self.driver.find_element(*self.email).send_keys(email)
 
-    def set_comment_message(self, cmnt):
+    def set_comment_message(self, comment):
         self.driver.find_element(self.comment_message).clear()
-        self.driver.find_element(self.comment_message).send_keys(cmnt)
+        self.driver.find_element(self.comment_message).send_keys(comment)
 
     def click_robot_verification(self):
         self.driver.find_element(self.robot).click()
